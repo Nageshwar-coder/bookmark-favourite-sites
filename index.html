@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="bg">
+            <h1 class="main-heading">Hello</h1>
+            <h1 class="main-heading">User !</h1>
+            <div class="middle-container">
+                <h1 class="middle-container-heading text-center">Bookmark Your Favourite Sites</h1>
+                <form id="bookmarkForm" class="bookmark-form">
+                    <div class="mb-3">
+                        <label for="siteNameInput" class="input-field-heading">SITE NAME</label>
+                        <input id="siteNameInput" type="text" class="form-control" />
+                        <p id="siteNameErrMsg" class="errorMessage"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="siteUrlInput" class="input-field-heading">SITE URL</label>
+                        <input id="siteUrlInput" type="text" class="form-control" />
+                        <p id="siteUrlErrMsg" class="errorMessage"></p>
+                    </div>
+                    <div class="mb-3 text-right">
+                        <button id="submitBtn" class="btn btn-primary">Submit</button>
+                        <button id="clearBtn" class="btn btn-danger">Clear Bookmarks</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-3">
+                <ul id="bookmarksList" class="list"></ul>
+            </div>    
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
